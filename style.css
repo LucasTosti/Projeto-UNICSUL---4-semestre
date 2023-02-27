@@ -1,0 +1,159 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0D4747;
+
+    font-family: 'Roboto';
+}
+
+header {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #30F2CF;
+
+    animation: topdown1 1.5s;
+}
+
+ul {
+    list-style: none;  
+
+    display: flex;
+    gap: 5.3rem;
+}
+
+ul li a {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.9rem;
+}
+
+form {
+    width: 40rem;
+    height: 43rem;
+
+    margin: 1rem auto;
+    padding: 3.5rem 3rem 0rem 3rem;
+    border-radius: 0.6rem;
+    background: #115959;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    animation: topdown1 1.5s;
+}
+
+
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+
+    color: #30F2CF;
+}
+
+.input-wrapper input {
+    background: #0D4747;
+
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.6rem;
+  
+    height: 3.5rem;
+    width: 30rem;
+
+    font-size: 1.4rem;
+
+    color: #30F2CF;
+}
+
+a {
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+
+
+    color: #30F2CF;
+}
+
+footer .button {
+    width: 30rem;
+    height: 5rem;
+    background: #2EF2BB;
+    border: 0;
+    border-radius: 0.25rem;
+    margin-top: 1.8rem;
+  
+    font-weight: 600;
+    font-size: 2rem;
+
+    color: #146868;
+
+    transition: ease 0.6s;
+}
+
+footer .button:hover {
+    transform: scale(1.030);
+}
+
+.line {
+    width: 30rem;
+    border-top: 0.15rem solid #2EF2BB;
+    margin-top: 6rem;
+}
+
+@keyframes topdown1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes topdown2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
